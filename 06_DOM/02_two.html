@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Chai aur Code</title>            
+</head>
+<body style="color: #fff ;background-color: #212121; ">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent=document.querySelector(".parent")
+    // console.log(parent);
+    // console.log(parent[0]) wrong nothing like this exist
+    // console.log(parent.children[0].innerText);// here we are able to find the children of parent
+    // for getting all the children
+    // for (let i = 0; i < parent.children.length; i++) {
+    //   console.log(parent.children[i]);       
+    // }
+    parent.children[0].style.color="orange"
+    parent.children[1].style.color="green"
+    parent.children[2].style.color="yellow"
+    parent.children[3].style.color="pink"
+    parent.children[0].style.padding="12px"
+    parent.children[1].style.padding="10px"
+    parent.children[2].style.padding="14px"
+    parent.children[3].style.padding="12px"
+
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    const dayone=document.querySelector(".day");
+    // console.log(dayone);
+    // but let say i want to get dayone parent without using querySelector which is expensive operation because after all its all document object model is a  tree structure traversing it all to get values is expensice in time 
+    // instead we can use more optimized version to get parent of oneday
+    // console.log(dayone.parentElement);
+    // //console.log(dayone.parentNode);
+    // console.log(dayone.nextElementSibling);
+
+    
+</script>
+</html>
